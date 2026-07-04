@@ -107,7 +107,7 @@ streamlit run app.py
 **Nitesh Kumar**
 
 - GitHub: https://github.com/nitesh890k
-- LinkedIn: https://www.linkedin.com/in/nitesh-kumar-13b500286
+- LinkedIn: www.linkedin.com/in/niteshkumaar
 
 ---
 
