@@ -72,10 +72,14 @@ def extract_skills_exact(text, skill_list=SKILL_KEYWORDS):
 _model = None
 def load_sbert_model(model_name="all-MiniLM-L6-v2"):
     global _model
+
+    print("Loading SBERT model...")
+
     if _model is None:
         _model = SentenceTransformer(model_name)
-    return _model
+        print("SBERT model loaded successfully!")
 
+    return _model
 # -------------------------
 # 5) Semantic similarity matching (BERT)
 #    Compare each JD skill not matched exactly to resume skills in our pdf or our file.
