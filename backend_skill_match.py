@@ -1,7 +1,11 @@
 # backend_skill_match.py
 import os
 import numpy as np
-from sentence_transformers import SentenceTransformer
+try:
+    from sentence_transformers import SentenceTransformer
+except Exception as e:
+    print("IMPORT ERROR:", e)
+    raise
 from sklearn.metrics.pairwise import cosine_similarity
 import pdfplumber
 from docx import Document
