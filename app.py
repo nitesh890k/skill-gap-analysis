@@ -13,7 +13,20 @@ from reportlab.pdfgen import canvas
 from reportlab.lib.utils import ImageReader
 
 # Import your backend (must be on Desktop)
-from backend_skill_match import analyze_resume_vs_jd
+try:
+    print("Importing backend...")
+
+    from backend_skill_match import analyze_resume_vs_jd
+
+    print("Backend imported successfully!")
+
+except Exception as e:
+    import traceback
+
+    print("BACKEND IMPORT FAILED")
+    traceback.print_exc()
+
+    raise
 
 st.set_page_config(page_title="Skill Gap Analysis & Similarity Matching", layout="wide")
 
