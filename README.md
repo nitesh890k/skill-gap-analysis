@@ -1,20 +1,29 @@
-# SkillGapAI – Resume vs Job Description Skill Gap Analyzer
+# 🚀 SkillGapAI – AI-Powered Resume vs Job Description Skill Gap Analyzer
 
-An AI-powered web application that compares a candidate's resume with a job description to identify matched skills, missing skills, and semantic similarities using Natural Language Processing (NLP) and Sentence-BERT (SBERT).
+SkillGapAI is an AI-powered web application that compares a candidate's resume with a job description to identify matched skills, missing skills, and semantic similarities using Natural Language Processing (NLP) and Sentence-BERT (SBERT).
 
-## Features
+---
 
-- Upload Resume (PDF, DOCX, TXT)
-- Upload Job Description (PDF, DOCX, TXT)
-- Exact skill matching
-- Semantic skill matching using Sentence-BERT (SBERT)
-- Skill gap analysis
-- Interactive graphs (Bar Chart & Pie Chart)
-- Download CSV report
-- Download PDF report
-- Personalized skill improvement recommendations
+## 🌐 Live Demo
 
-## Tech Stack
+**Live Application:** https://skillgapai-app.streamlit.app
+
+---
+
+## ✨ Features
+
+- 📄 Upload Resume (PDF, DOCX, TXT)
+- 📋 Upload Job Description (PDF, DOCX, TXT)
+- 🤖 Exact Skill Matching
+- 🧠 Semantic Skill Matching using Sentence-BERT (SBERT)
+- 📊 Interactive Bar Chart & Pie Chart
+- 📑 Download CSV Report
+- 📄 Generate PDF Report
+- 💡 Personalized Skill Improvement Recommendations
+
+---
+
+## 🛠️ Tech Stack
 
 - Python
 - Streamlit
@@ -23,40 +32,83 @@ An AI-powered web application that compares a candidate's resume with a job desc
 - Pandas
 - NumPy
 - Matplotlib
+- ReportLab
 - pdfplumber
 - python-docx
-- ReportLab
 
-## Project Structure
+---
+
+## 📂 Project Structure
 
 ```
-app.py
-backend_skill_match.py
-requirements.txt
-README.md
+skill-gap-analysis/
+│── app.py
+│── backend_skill_match.py
+│── requirements.txt
+│── README.md
+│── LICENSE
+│── .gitignore
 ```
 
-## Installation
+---
+
+## ⚙️ Installation
+
+Clone the repository:
 
 ```bash
 git clone https://github.com/nitesh890k/skill-gap-analysis.git
+```
+
+Move into the project folder:
+
+```bash
 cd skill-gap-analysis
+```
+
+Install dependencies:
+
+```bash
 pip install -r requirements.txt
+```
+
+Run the application:
+
+```bash
 streamlit run app.py
 ```
 
-## Screenshots
+---
 
-(Add screenshots after deployment.)
+## 🧠 How It Works
 
-## Future Improvements
+1. Upload a Resume.
+2. Upload a Job Description.
+3. Extract text from both documents.
+4. Detect technical skills using keyword matching.
+5. Compare skills semantically using Sentence-BERT.
+6. Display matched skills, missing skills, charts, and downloadable reports.
 
-- Skill recommendations using LLMs
-- Multi-language resume support
-- Authentication
-- Resume scoring
-- ATS compatibility score
+---
 
-## License
+## 🚀 Future Improvements
 
-MIT License
+- ATS Resume Score
+- Resume Ranking
+- Learning Roadmap for Missing Skills
+- Job Recommendation System
+- User Authentication
+- Multi-language Resume Support
+
+---
+
+## 👨‍💻 Author
+
+**Nitesh Kumar**
+
+- GitHub: https://github.com/nitesh890k
+- LinkedIn: https://www.linkedin.com/in/nitesh-kumar-13b500286
+
+---
+
+⭐ If you found this project useful, consider giving it a star!
